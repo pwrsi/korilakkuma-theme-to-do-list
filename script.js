@@ -1,13 +1,5 @@
 // task list
-let taskList = JSON.parse(localStorage.getItem('tasks')) || [{
-  id: 1,
-  name: 'Do homework',
-  status: 'not done'
-}, {
-  id: 2,
-  name: 'Submit homework',
-  status: 'done'
-}];
+let taskList = JSON.parse(localStorage.getItem('tasks')) || [];
 
 // DOM
 const addButton = document.querySelector('.js-add-button');
