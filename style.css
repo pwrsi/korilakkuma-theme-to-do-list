@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jua";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: pink;
+  width: 400px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./images/diagonal-plaid-bg.jpg');
+  background-size: cover;
+  border: 3px solid rgb(241, 190, 198);
+  padding: 6px;
+}
+
+.inner-container {
+  background-color: rgba(255, 255, 255, 0.338);
+  width: 100%;
+  border-radius: 4%;
+  backdrop-filter: blur(9px);
+  border: 3px solid rgb(241, 190, 198);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.korilakkuma-fairy {
+  position: absolute;
+  top: -45px;
+  right: -140px;
+  width: 75%;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.title {
+  color: rgb(215, 156, 176);
+  font-size: 42px;
+}
+
+.progress-container {
+  background: rgba(255, 227, 236, 0.351);
+  width: 92%;
+  height: 120px;
+  border-radius: 18px;
+  border: 3px solid rgba(241, 190, 198, 0.652);
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(215, 156, 176);
+}
+
+.left-section {
+  width: 70%;
+}
+
+.motivational-caption {
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.progress-bar {
+  background-color: white;
+  width: 100%;
+  height: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-number {
+  width: 85px;
+  height: 85px;
+  background-color: rgba(241, 190, 198, 0.652);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: white;
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  height: 40px;
+  margin: 15px;
+}
+
+.input-task-field {
+  width: 85%;
+  height: 40px;
+  border-radius: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgba(241, 190, 198, 0.652);
+  font-size: 18px;
+  padding-left: 12px;
+  overflow: hidden;
+  color: rgb(215, 156, 176);
+}
+
+.input-task-field::placeholder {
+  font-size: 18px;
+}
+
+.input-task-field:focus {
+  outline: none;
+  border-color: pink
+}
+
+.add-button {
+  width: 12%;
+  border-radius: 36px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;  background-color: rgba(241, 190, 198, 0.652);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease
+}
+
+.add-button:hover {
+  background-color: rgb(255, 195, 203);
+}
+
+.add-button:active {
+  transform: scale(0.9);
+  background-color: rgb(255, 205, 212);
+}
+
+.korilakkuma-note {
+  width: 35%;
+  opacity: 0.8;
+  pointer-events: none;
+
+}
+
+.tasks-container {
+  width: 92%;
+  margin-bottom: 10px;
+}
+
+.task-container {
+  background-color: white;
+  padding-left: 8px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 227, 236, 0.351);
+  border: 3px solid rgba(241, 190, 198, 0.652);
+  border-radius: 36px;
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-container:hover .task-name .task-icons i {
+  opacity: 1;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgba(241, 190, 198, 0.652); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.checkmark i {
+  color: rgb(220, 169, 176);
+  cursor: pointer;
+}
+
+.hide-checkmark i {
+  opacity: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.task-name {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-name-text {
+  flex: 1;
+  font-size: 18px;
+  color:rgb(194, 140, 158)
+}
+
+.task-icons {
+  display: flex;
+  margin-right: 12px;
+  font-size: 14px;
+  gap: 3px;
+  color: rgb(215, 156, 176);
+}
+
+.task-icons i {
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.1s ease;
+}
+
+.task-icons i:hover {
+  color: pink
+}
+
+.task-name-editing {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.edit-input {
+  margin-right: 8px;
+}
+
+.task-icons-editing {
+  display: flex;
+  margin-right: 12px;
+  font-size: 15px;
+
+}
+
+.hide-kori-note {
+  display: none;
+}
+
+.hide-edit-input {
+  display: none;
+}
+
+.hide-task-name {
+  display: none;
+}
+
+.edit-input {
+  width: 85%;
+  height: 32px;
+  border-radius: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 0px solid rgba(241, 190, 198, 0.652);
+  font-size: 18px;
+  padding-left: 12px;
+  overflow: hidden;
+  color: rgb(215, 156, 176);
+}
+
+.save {
+  color: rgb(46, 171, 46);
+}
+
+.discard {
+  color: rgb(206, 64, 64);
+}
+
+.task-icons-editing i {
+  cursor: pointer;
+}
+
+.edit-input:focus {
+  outline: none;
+  border: 3px solid pink;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: pink;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
