@@ -159,7 +159,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5px;  background-color: rgba(241, 190, 198, 0.652);
+  padding-top: 5px;  
+  background-color: rgba(241, 190, 198, 0.652);
   border: none;
   color: white;
   cursor: pointer;
@@ -306,11 +307,11 @@ body {
 }
 
 .save {
-  color: rgb(46, 171, 46);
+  color: rgba(46, 171, 46, 0.5);
 }
 
 .discard {
-  color: rgb(206, 64, 64);
+  color: rgb(206, 64, 64), 0.5;
 }
 
 .task-icons-editing i {
