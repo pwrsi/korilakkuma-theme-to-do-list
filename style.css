@@ -311,7 +311,7 @@ body {
 }
 
 .discard {
-  color: rgb(206, 64, 64), 0.5;
+  color: rgba(206, 64, 64, 0.5);
 }
 
 .task-icons-editing i {
