@@ -1,9 +1,9 @@
-﻿# korilakkuma-theme-to-do-list
+﻿# korilakkuma-themed-to-do-list
 
-a simple and cute korilakkuma themed to do list that allows you to add, edit, and delete a task, as well as track your progress.
+a simple, cute korilakkuma-themed to do list that allows you to add, edit, and delete tasks while tracking your progress.
 
 future improvements:
-* allows users to add a due date
+* due date
 * filtering
-* animations every time ui changes
-* mobile version (hover to focus -> press task to focus)
+* ui transition animations
+* tap to interact for mobile
